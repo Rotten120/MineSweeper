@@ -1,5 +1,11 @@
 MINESWEEPER
 
 UPLOADED AND OWNED BY:
+
 VON ZEDRIC B. DELOS REYES
+
 BSCPE 1-2
+
+------
+
+Note: Preferably opened on cmd
