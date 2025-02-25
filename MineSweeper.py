@@ -360,5 +360,5 @@ class minesweeper:
 if __name__ == '__main__':
     game = minesweeper()
     while True:
-        os.system('clear')
+        os.system('cls')
         if game.update(): break
