@@ -17,6 +17,7 @@ class cell:
     
     def toggleFlag(self):
         self.isFlag = not self.isFlag
+        return self.isFlag
     
     def reveal(self):
         if self.isFlag or self.isBomb: return
@@ -201,7 +202,8 @@ class minesweeper:
                 
     def checkInput(self, col, row):
         if self.mode == "Flag":
-            self.get(col, row).toggleFlag()   
+            if self.get(col, row).toggleFlag(): self.flagCount -= 1
+            else: self.flagCount += 1
             return
         
         self.get(col, row).reveal()
